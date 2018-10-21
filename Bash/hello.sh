@@ -1,6 +1,15 @@
 #Program to print hello world in Bash using function
 helloWorld(){
-  echo Hello World $1 #Param 1
+  if [ $1 = Hi ]
+  then
+    echo Hi $2
+  elif [ $1 = Hello ]
+  then
+    echo Hello $2
+  else
+    echo Hello World
+  fi
 }
 
-helloWorld Ankit #Passing the param
+helloWorld Hi Ankit
+helloWorld Hello Ankit
