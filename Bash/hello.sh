@@ -1,6 +1,6 @@
 #Program to print hello world in Bash using function
 helloWorld(){
-  echo Hello World
+  echo Hello World $1 #Param 1
 }
 
-helloWorld #Calling the function
+helloWorld Ankit #Passing the param
